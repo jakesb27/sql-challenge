@@ -114,5 +114,6 @@ FROM
 	employees emp
 GROUP BY
 	emp.last_name
-ORDER BY "Total" DESC;
+ORDER BY
+	"Total" DESC;
 
