@@ -28,7 +28,8 @@ JOIN
 	salaries sal
 	ON emp.emp_no = sal.emp_no;
 
--- 3. List the manager of each department along with their department number, department name, employee number, last name, and first name.
+-- 3. List the manager of each department along with their department number, department name,
+--    employee number, last name, and first name.
 SELECT
 	dma.dept_no "Department No.",
 	dep.dept_name "Department Name",
@@ -44,7 +45,6 @@ JOIN
 	employees emp
 	ON dma.emp_no = emp.emp_no;
 ```
-
 <br />
 
 ## License
