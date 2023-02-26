@@ -26,7 +26,20 @@ WHERE
 
 -- 3. List the manager of each department along with their department number, department name,
 --    employee number, last name, and first name.
-
+SELECT
+	dma.dept_no "Department No.",
+	dep.dept_name "Department Name",
+	emp.emp_no "Employee No.",
+	emp.last_name "Manager Last Name",
+	emp.first_name "Manager First Name"
+FROM
+	dept_manager dma
+JOIN
+	departments dep
+	ON dma.dept_no = dep.dept_no
+JOIN
+	employees emp
+	ON dma.emp_no = emp.emp_no;
 
 -- 4. List the department number for each employee along with that employee’s employee number,
 --    last name, first name, and department name.
