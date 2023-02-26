@@ -26,9 +26,24 @@ FROM
 JOIN
 	salaries sal
 	ON emp.emp_no = sal.emp_no;
+
+
+SELECT
+	dma.dept_no "Department No.",
+	dep.dept_name "Department Name",
+	emp.emp_no "Employee No.",
+	emp.last_name "Manager Last Name",
+	emp.first_name "Manager First Name"
+FROM
+	dept_manager dma
+JOIN
+	departments dep
+	ON dma.dept_no = dep.dept_no
+JOIN
+	employees emp
+	ON dma.emp_no = emp.emp_no;
 ```
 
-<br />
 <br />
 
 ## License
