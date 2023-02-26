@@ -15,6 +15,7 @@ Pewlett Hackard has provided various csv files of an old employee database and i
 ### Sample SQL queries
 
 ```SQL
+-- 1. List the employee number, last name, first name, sex, and salary of each employee.
 SELECT
 	emp.emp_no "Employee No.",
 	emp.last_name "Last Name",
@@ -27,7 +28,7 @@ JOIN
 	salaries sal
 	ON emp.emp_no = sal.emp_no;
 
-
+-- 3. List the manager of each department along with their department number, department name, employee number, last name, and first name.
 SELECT
 	dma.dept_no "Department No.",
 	dep.dept_name "Department Name",
